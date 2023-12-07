@@ -1,0 +1,95 @@
+body{
+    --cl--1--:#ffffff;
+    --cl--2--:#14171f;
+    --cl--3--:#000039;
+    --cl--4--:#b0c4de;
+    --cl--5--:#f6f8f7;
+    background: var(--cl--1--);
+}
+.contact{
+    display: flex;
+    background: var(--cl--4--);
+    margin: 1em 8em;
+    padding: 2em;
+}
+form {
+    margin: 1em 4em;
+    display: flex;
+    flex-direction: column;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group label{
+    padding: 10px;
+    font-size: 16px;
+    font-weight:500;
+}
+.form-group input{
+    padding:10px;
+    outline: none;
+}
+.form-group textarea{
+    padding: 10px;
+}
+.form-group button{
+    padding: 10px;
+    width: 100%;
+    margin-top: 1em;
+    background-color: #483d8b;
+    color: var(--cl--1--);
+    border: 2px solid var(--cl--3--);
+    font-weight: 700;
+}
+.form-group button:hover{
+    background-color: var(--cl--1--);
+    color: var(--cl--3--);
+    border: 2px solid var(--cl--3--);
+
+}
+.contact-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+.contact-btn{
+    padding: 10px;
+    background-color:var(--cl--3--);
+    font-weight: 800;
+    color: var(--cl--1--);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+iframe{
+    width: 600px;
+    height: 450px;    
+}
+@media(width < 917px){
+    .contact{
+        flex-direction: column;
+    }
+    form{
+        margin: 1em 2em;
+    }
+    iframe{
+        width: 300px;
+        margin: 1em 10px;
+    }
+}
+@media(width < 500px){
+    .contact{
+        margin: 2em 0em;
+        padding: 0em;
+    }
+    
+}
+@media(width < 300px){
+    iframe{
+        width: 250px;
+    }
+}
